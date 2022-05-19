@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { AuthProvider } from "./AuthProvider";
+import { Route, Routes } from "react-router-dom";
+import { Switch } from "react-router-dom";
+import Todo from "./components/todo";
+import { useId } from "react";
+import Login from "./Login";
 
 function App() {
+  const id = useId();
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>TOdolist</h2>
+      <AuthProvider >
+        <Routes>
+          <Route path="/" element={<Login />} />
+          <Route path="/home" exact element={<Todo />} />
+        </Routes>
+        {/* <Routes>
+        </Routes> */}
+      </AuthProvider>
     </div>
   );
 }
