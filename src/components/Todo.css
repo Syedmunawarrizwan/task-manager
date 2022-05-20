@@ -1,9 +1,128 @@
+.todo-div {
+  background-image: url("https://media.istockphoto.com/vectors/business-office-work-and-task-management-concept-vector-flat-person-vector-id1208534790?k=20&m=1208534790&s=612x612&w=0&h=v9V3ytTdspHvEFMP5oUrbd1WCGU46-WxH26s7EOi_yQ=");
+  background-repeat: no-repeat;
+}
+
 .user-inp {
   background-color: black;
   height: 25px;
-  width: 45%;
+  width: 40%;
   color: bisque;
 }
 .btn-addUser {
-  height: 25px;
+  height: 30px;
+}
+
+.btn-addUser {
+  background-image: linear-gradient(144deg, #af40ff, #5b42f3 50%, #00ddeb);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #ffffff;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.btn-addUser:active,
+.btn-addUser:hover {
+  outline: 0;
+}
+
+.btn-addUser span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.btn-addUser:hover span {
+  background: none;
+}
+
+img {
+  width: 20px;
+  height: 20px;
+}
+.delete-btn {
+  border-style: var(#00bd68);
+}
+.list {
+  /* border: 3px black; */
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo-list {
+  border-style: ridge;
+  border-color: lightgray;
+  border-width: 2px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+
+  display: flex;
+  /* justify-content: space-evenly; */
+  align-items: center;
+
+  border-radius: 5px;
+}
+.todo-list:hover {
+  transition: 1s;
+  border-color: #faed26;
+  background-color: #daad86;
+}
+h1 {
+  align-items: center;
+}
+.header-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #659dbd;
+  height: 50px;
+}
+
+.logout-btn {
+  background-color: initial;
+  background-image: linear-gradient(-180deg, #00d775, #00bd68);
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 2px 4px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Inter, -apple-system, system-ui, Roboto, "Helvetica Neue", Arial,
+    sans-serif;
+  height: 44px;
+  line-height: 44px;
+  outline: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  pointer-events: auto;
+  position: relative;
+  text-align: center;
+  touch-action: manipulation;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 155px;
+  z-index: 9;
+  border: 0;
+}
+
+.logout-btn:hover {
+  background: #00bd68;
 }

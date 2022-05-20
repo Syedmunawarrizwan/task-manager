@@ -1,13 +1,19 @@
 import React from "react";
+import "./Login.css"
 import { signInWithGoogle } from "./firebase-config";
 
 function Login() {
   return (
-    <React.Fragment>
-      <div className="signInbtn">
-        <button onClick={signInWithGoogle}>signInWithGoogle</button>
+    <div>
+
+      <div className="login-div">
+
+
+        <div className="btn-div">
+          <button className="signInbtn" onClick={signInWithGoogle}>Sign In With Google</button>
+        </div>
       </div>
-    </React.Fragment>
+    </div>
   );
 }
 export default Login;

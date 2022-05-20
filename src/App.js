@@ -11,7 +11,6 @@ function App() {
   const id = useId();
   return (
     <div className="App">
-      <h2>TOdolist</h2>
       <AuthProvider >
         <Routes>
           <Route path="/" element={<Login />} />
