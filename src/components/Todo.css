@@ -1,6 +1,7 @@
 .todo-div {
   background-image: url("https://media.istockphoto.com/vectors/business-office-work-and-task-management-concept-vector-flat-person-vector-id1208534790?k=20&m=1208534790&s=612x612&w=0&h=v9V3ytTdspHvEFMP5oUrbd1WCGU46-WxH26s7EOi_yQ=");
   background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 .user-inp {

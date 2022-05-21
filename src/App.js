@@ -8,7 +8,6 @@ import { useId } from "react";
 import Login from "./Login";
 
 function App() {
-  const id = useId();
   return (
     <div className="App">
       <AuthProvider >
